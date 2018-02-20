@@ -1,0 +1,119 @@
+url: https://apis.appconnect.ibmcloud.com/sABR4j/SheetEntryModel
+user name : appconuser01
+pwd: 77e857d1-400b-4ef7-b89c-bea6aa7e249a
+
+
+
+{{
+  "TxnId": "sample_txnid",
+  "LogMessages": [
+    {
+      "LogMessage": {
+        "BrokerName": "sample_brokername",
+        "IntegrationServername": "sample_integrationservername",
+        "QueueManagerName": "sample_queuemanagername",
+        "MessageFlowLabel": "sample_messageflowlabel",
+        "InterfaceName": "sample_interfacename",
+        "Timestamp": "YYYY-MM-DDT00:00:00.000Z",
+        "LogParams": {
+          "TxnId": "sample_txnid",
+          "AltId": "sample_altid",
+          "LogLevel": "sample_loglevel",
+          "MessageType": "sample_messagetype",
+          "LogPoint": "sample_logpoint",
+          "Description": "sample_description",
+          "Channel": "sample_channel",
+          "LogPayloadFlag": true,
+          "LogHeadersFlag": true,
+          "LogExceptionFlag": true,
+          "HeaderData": "sample_headerdata",
+          "Payload": "sample_payload"
+        }
+      }
+    }
+  ]
+}}
+
+
+
+{
+  "LogMessages": {
+    "LogMessage": [
+      {
+        "TimeStamp": "2018-02-19-18:32:50.368799",
+        "TxnId": "414d5120514d44313031202020202020ca288a5a2c830320",
+        "InterfaceName": "INTERFACE",
+        "FlowName": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "BrokerName": "IIBIND101",
+        "IntegrationServername": "IS_POC4",
+        "QueueManagerName": "QMD101",
+        "LogLevel": "INFO",
+        "loggerAppender": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageFlowLabel": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "AltId": " ",
+        "MessageType": "FetchAWB",
+        "LogPoint": "FetchAWB_Initialization_SF.Config",
+        "Description": "AWB Request message received from Sterling",
+        "Channel": "POST http://10.120.132.54:2020/esb/ecommerce/ecom/fetchAWB HTTP/1.1",
+        "MessageHeaders": " X-Original-HTTP-Command:POST http://10.120.132.54:2020/esb/ecommerce/ecom/fetchAWB HTTP/1.1   Accept-Encoding:gzip,deflate   Content-Type:application/xml   Content-Length:79   Host:10.120.132.54:2020   Connection:Keep-Alive   User-Agent:Apache-HttpClient/4.1.1 (java 1.5)   X-Remote-Addr:172.25.210.1   X-Remote-Host:172.25.210.1   X-Server-Name:10.120.132.54   X-Server-Port:2020   X-Scheme:http   ",
+        "Payload": "<Awb User=\"ecomexpress\" password=\"Ke$3c@4oT5m6h#$\" count='1' Type=\"COD\">
+</Awb>"
+      },
+      {
+        "TimeStamp": "2018-02-19-18:32:50.369267",
+        "TxnId": "414d5120514d44313031202020202020ca288a5a2c830320",
+        "InterfaceName": "INTERFACE",
+        "FlowName": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "BrokerName": "IIBIND101",
+        "IntegrationServername": "IS_POC4",
+        "QueueManagerName": "QMD101",
+        "LogLevel": "INFO",
+        "loggerAppender": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageFlowLabel": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageType": "FetchAWB",
+        "LogPoint": "FetchAWB_Map_Req.BuildTargetMsg",
+        "Description": "AWB Request message being sent to EcomExpress",
+        "Channel": "HTTP",
+        "MessageHeaders": " Content-Type:application/x-www-form-urlencoded   Accept:application/json   X-Query-String:username=ecomexpress&password=Ke$3c@4oT5m6h#$",
+        "Payload": "count=1&type=COD"
+      },
+      {
+        "TimeStamp": "2018-02-19-18:32:50.387009",
+        "TxnId": "414d5120514d44313031202020202020ca288a5a2c830320",
+        "InterfaceName": "INTERFACE",
+        "FlowName": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "BrokerName": "IIBIND101",
+        "IntegrationServername": "IS_POC4",
+        "QueueManagerName": "QMD101",
+        "LogLevel": "INFO",
+        "loggerAppender": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageFlowLabel": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "AltId": " ",
+        "MessageType": "FetchAWB",
+        "LogPoint": "LogPoint_FetchAWB_Msg_Rcvd",
+        "Description": "AWB Success response received from Ecom",
+        "Channel": "http://10.120.144.86:9080/ecomexpressapi/outbound/apiv2/fetch_awb/",
+        "MessageHeaders": " X-Original-HTTP-Status-Line:HTTP/1.1 200 OK   X-Original-HTTP-Status-Code:200   Transfer-Encoding:chunked   Keep-Alive:timeout=5, max=100   Server:Apache/2.4.18 (Ubuntu)   Connection:Keep-Alive   Vary:Cookie,Accept-Encoding   Date:Mon, 19 Feb 2018 13:02:50 GMT   Content-Type:text/html; charset=utf-8   Content-Language:en-US   http://10.120.144.86:9080/ecomexpressapi/outbound/apiv2/fetch_awb/X-Query-String:username=ecomexpress&password=Ke$3c@4oT5m6h#$",
+        "Payload": "Unauthorised Request"
+      },
+      {
+        "TimeStamp": "2018-02-19-18:32:50.387348",
+        "TxnId": "414d5120514d44313031202020202020ca288a5a2c830320",
+        "InterfaceName": "INTERFACE",
+        "FlowName": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "BrokerName": "IIBIND101",
+        "IntegrationServername": "IS_POC4",
+        "QueueManagerName": "QMD101",
+        "LogLevel": "INFO",
+        "loggerAppender": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageFlowLabel": "Logistics_Sterling_ECOM_FetchAWB_MF",
+        "MessageType": "FetchAWB",
+        "LogPoint": "FetchAWB_Map_Resp.BuildTargetMsg",
+        "Description": "AWB Success response message being sent to Sterling",
+        "Channel": "http://10.120.144.86:9080/ecomexpressapi/outbound/apiv2/fetch_awb/",
+        "MessageHeaders": "NA",
+        "Payload": "<Errors><Error ErrorCode=\"200\" ErrorDescription=\"Unauthorised Request\"/></Errors>"
+      }
+    ]
+  }
+}
